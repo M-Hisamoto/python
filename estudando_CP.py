@@ -1,3 +1,5 @@
+import time
+"""
 frase = 'Curso em video python'
 print(frase)
 print(len( frase))
@@ -14,9 +16,27 @@ print("curso" in frase)
 print(frase)
 frase.split()
 '-'.join(frase)
+"""
 
-print(""" 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu urna, tristique non mi id, ultricies rhoncus tortor. Quisque eu turpis dictum, condimentum risus vitae, consectetur ante. Vestibulum mauris arcu, cursus eu vulputate in, tincidunt sit amet mi. Duis consectetur purus quis pretium scelerisque. Nullam euismod mi tellus. Aenean fermentum fringilla tempus. Morbi a nibh mi.
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ex ex, elementum mattis purus semper, lacinia tempor elit. Suspendisse potenti. Duis sed blandit augue, eu pellentesque metus. Donec dapibus felis at purus tempor elementum. Quisque accumsan massa et varius eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ut suscipit nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent venenatis viverra mi sit amet aliquam. Pellentesque eu est aliquet, sodales ipsum eu, aliquam tortor. Maecenas aliquet ultrices ante ut condimentum. Fusce fermentum posuere leo id consequat. Morbi vehicula congue risus.""")
+#for c in range(10, 0, -2):
+#    print(c)
+#print('fim')
 
+'''
+i = int(input('digite um numero do inico: '))
+f = int(input('digite um numero do fim : '))
+p = int(input('digite um numero pulando numeros: '))
+for c in range(i, f+1, p):
+    print(c)
+print('fim')'''
 
+'''
+for c in range(10, 0, -1):
+    print(c)
+    time.sleep(1)
+print('fim')
+'''
+
+for c in range(2, 50, 2):
+    print(c)
+print('fim')
