@@ -77,7 +77,7 @@ print(a or b)
 print(a and b or not b)
 print(not b)
 '''
-
+''' 
 print('olá gostaria de conseguir um empréstimo?')
 idade = int(input('digite sua idade: '))
 salario = int(input('digite aqui o seu salário: '))
@@ -86,3 +86,17 @@ if idade >= 18 and salario >= 2000:
     print('ok, tudo certo pode pegar seu emprestimo')
 else:
     print('perdão, tente novamente mais tarde')
+'''
+'''
+print(5 * 4 < 4 + 3)
+print(6 * 2 - 1 > 3 * 1)
+print(9 - 4 / 2 <= 7 + 1 or 5 * 2 - 3 != 6)
+print(9 / 3 == 3 * 3 and 2 * 3 - 1 >= 8)
+'''
+
+A = 5
+B = 1
+C = True
+D = False
+
+print(A > B and C or D)
