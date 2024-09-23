@@ -93,6 +93,7 @@ print(6 * 2 - 1 > 3 * 1)
 print(9 - 4 / 2 <= 7 + 1 or 5 * 2 - 3 != 6)
 print(9 / 3 == 3 * 3 and 2 * 3 - 1 >= 8)
 '''
+'''
 
 A = 5
 B = 1
@@ -100,3 +101,53 @@ C = True
 D = False
 
 print(A > B and C or D)
+'''
+'''
+print('CALCULADOR DE APROVAÇÃO')
+print('-'*30)
+
+n1 = int(input('nota1 da materia1: '))
+n2 = int(input('nota2 da materia1: '))
+n3 = int(input('nota3 da materia1: '))
+
+materia1 = (n1 + (n2*2) + n3) / 4
+
+print('-'*30)
+
+n4 = int(input('nota1 da materia2: '))
+n5 = int(input('nota2 da materia2: '))
+n6 = int(input('nota3 da materia2: '))
+
+materia2 = (n4 + (n5*2) + n6) / 4
+
+print('-'*30)
+
+n7 = int(input('nota1 da materia3: '))
+n8 = int(input('nota2 da materia3: '))
+n9 = int(input('nota3 da materia3: '))
+
+materia3 = (n7 + (n8*2) + n9) / 4
+
+print('-'*30)
+
+if materia1 >= 7 and materia2 >= 7 and materia3 >= 7 :
+    print('parabens, voce foi aprovado.')
+else:
+    print('deveria ter estudado mais, foi reprovado.')
+'''
+'''
+nome = input('digite seu nome: ')
+print(len(nome))
+print(nome[:1])
+'''
+'''
+palavra = 'socorram me subi no onibus em marrocos'
+
+print(palavra[::-1])
+'''
+'''
+word = input('digite uma palavra: ')
+print(word[1::2])
+'''
+#pdf 3 -> Faça um programa que dado uma palavra, retorne os caracteres nas posições ímpares.
+#pais maus - mommy called me sheriff
