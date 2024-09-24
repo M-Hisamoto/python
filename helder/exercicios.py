@@ -149,5 +149,107 @@ print(palavra[::-1])
 word = input('digite uma palavra: ')
 print(word[1::2])
 '''
-#pdf 3 -> Faça um programa que dado uma palavra, retorne os caracteres nas posições ímpares.
-#pais maus - mommy called me sheriff
+'''
+word = input('digite uma palavra: ')
+print(word[::2])
+'''
+'''
+str1 = input('string1: ')
+str2 = input('string2: ')
+
+print(str1[1:] + str2[1:])
+'''
+'''
+word = input('escreva uma palavra: ')
+print(word[-2:]*3)
+'''
+'''
+nickname = input('usuario: ')
+print(nickname)
+'''
+'''
+nome = input('escreva seu nome: ')
+idade = int(input('escreva sua idade: '))
+
+print(f'Olá meu nome é {nome}, e tenho {idade} anos.')
+'''
+'''
+n1 = int(input("digite um numero inteiro: "))
+n2 = int(input("digite outro numero inteiro: "))
+
+print(n1 + n2)
+'''
+'''
+anos = int(input('digite a quantidade de anos de serviço: '))
+bonus = anos * 1230
+print(bonus)
+'''
+'''
+m = float(input('digite um valor em metros: '))
+mm = m / 0.001
+print(f"o valor em milímetros é: {mm}")
+'''
+'''
+dias = int(input('dias: '))
+horas = int(input('horas: '))
+minu = int(input('minutos: '))
+seg = int(input('segundos: '))
+
+dias_seg = dias * 86400
+horas_seg = horas * 3600
+minu_seg = minu * 60
+
+soma = seg + dias_seg + horas_seg + minu_seg
+
+print(f"a conversão desse tempo para segundos é: {soma} segundos.")
+'''
+'''
+sal = float(input("digite o salário: "))
+aume = float(input('digite a pocentagem do aumento: '))
+
+porcentagem = aume * 0.01
+aumento = sal + (sal * porcentagem)
+print(f"seu novo salário é: {aumento}")
+'''
+'''
+preco = float(input("digite o preço: "))
+desc = float(input('digite a pocentagem do desconto: '))
+
+porcentagem = desc * 0.01
+desconto = preco * porcentagem
+novo_preco = preco - desconto
+print(f"o desconto é de: R${desconto}, o novo preço a pagar é R${novo_preco}.")
+'''
+'''
+s = float(input("digite aqui a distancia da viagem em KM: "))
+v = float(input("digite aqui a velocidade média esperada da viagem(KM/h): "))
+t = s/v
+
+print(f"a viagem vai demorar aproximadamente {t:.2f}h.")
+'''
+'''
+c = float(input("digite a tmperatura em °C: "))
+
+f = ((9*c) / 5) + 32
+print (f"resultado em °F: {f}")
+'''
+'''
+km = float(input("quantidade de KMs percorridos: "))
+dias = int(input("quantidade de dias usados: "))
+
+prec_dias = dias * 60
+prec_km = km * 0.15
+soma = prec_dias + prec_km
+
+print(f"o preço total foi de : R${soma:.2f}")
+'''
+'''
+cigarros = int(input("quantos cigarros fuma por dia? "))
+anos = float(input("quantos anos fumando? "))
+
+min_perd_d = cigarros * 10
+min_perd_a = (365 * anos) * min_perd_d
+dias_perd = min_perd_a / 1440
+
+print(f'parabens voce perdeu {dias_perd:.0f} dias da sua vida por fumar.')
+'''
