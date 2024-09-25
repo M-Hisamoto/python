@@ -253,3 +253,24 @@ dias_perd = min_perd_a / 1440
 
 print(f'parabens voce perdeu {dias_perd:.0f} dias da sua vida por fumar.')
 '''
+'''
+n1 = int(input('digite um número: '))
+n2 = int(input('digite um número: '))
+
+if n1 % 2 == 0 and n2 % 2 == 0 or n1 % 2 != 0 and n2 % 2 != 0: 
+    print(False)
+else:
+    print(True)
+'''     
+
+
+
+
+
+
+
+
+
+
+
+
