@@ -262,15 +262,73 @@ if n1 % 2 == 0 and n2 % 2 == 0 or n1 % 2 != 0 and n2 % 2 != 0:
 else:
     print(True)
 '''     
+'''
+vel = int(input('qual é a sua velocidade em Km/h: '))
+
+if vel > 80:
+    multa = (vel - 80) *5
+    print(f'você foi multado em R${multa}')
+else:
+    print('ok está tudo na lei')
+'''
+'''
+primeiro = int(input('Primeiro numero: '))
+segundo  = int(input('Segundo numero : '))
+terceiro = int(input('Terceiro numero: '))
+
+maior = primeiro
+menor = segundo
 
 
+if (primeiro < menor):
+     menor = primeiro
+if (terceiro < menor):
+        menor = terceiro
 
+if (segundo > maior):
+     maior = segundo
+if (terceiro > maior):
+        maior = terceiro
 
+print(f'Maior: {maior} \nMenor: {menor}')
+'''
+'''
+sal = int(input('insira o seu salário: '))
 
+if sal > 1250:
+    aum = sal * 0.10
+    print(f'o aumento será de {aum}')
+else:
+    aum = sal * 0.15
+    print(f'o aumento será de {aum}')
+'''
+'''
+num = int(input('digite um numero: '))
 
+if num % 2 == 0 and num < 100:
+    print('é par e menor que 100')
+elif num % 2 == 0 and num >= 100:
+    print('é par e maior ou igual a 100')
 
+if num % 2 != 0 and num < 100:
+    print('é impar e menor que 100')
+elif num % 2 != 0 and num >= 100:
+    print('é impar e maior ou igual a 100')
+'''
+'''
+km = float(input('digite aqui a kilometragem: '))
 
+if km > 200:
+    print(f'Preço da passagem ficou: {km*0.45}')
+else:
+    print(f'Preço da passagem ficou: {km*0.5}')
+'''
 
+#Faça um programa que dado dois nomes (em minúsculo) retorne a concatenação deles, em ordem alfabética, com espaço no meio. Exemplo: ‘helder’ e ‘maria’ teremos ‘helder maria.
+nome1 = input('digite um nome aqui: ')
+nome2 = input('digite outro nome aqui: ')
 
+nomes = [nome1, nome2]
 
+print(sorted(nomes))
 
