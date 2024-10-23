@@ -324,6 +324,7 @@ else:
     print(f'Preço da passagem ficou: {km*0.5}')
 '''
 
+"""
 #Faça um programa que dado dois nomes (em minúsculo) retorne a concatenação deles, em ordem alfabética, com espaço no meio. Exemplo: ‘helder’ e ‘maria’ teremos ‘helder maria.
 nome1 = input('digite um nome aqui: ')
 nome2 = input('digite outro nome aqui: ')
@@ -331,4 +332,13 @@ nome2 = input('digite outro nome aqui: ')
 nomes = [nome1, nome2]
 
 print(sorted(nomes))
+"""
+
+
+
+
+
+
+
+
 
