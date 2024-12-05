@@ -323,16 +323,79 @@ if km > 200:
 else:
     print(f'Preço da passagem ficou: {km*0.5}')
 '''
+'''
+nome = input("digite seu nome: ")
+print(len(nome))
+print(nome[:1])
+'''
+'''
+word = input("digite uma palavra: ")
+print(word[::-1])
+'''
+'''
+p1 = input("digite uma palavra: ")
+p2 = input("digite uma palavra: ")
 
-"""
-#Faça um programa que dado dois nomes (em minúsculo) retorne a concatenação deles, em ordem alfabética, com espaço no meio. Exemplo: ‘helder’ e ‘maria’ teremos ‘helder maria.
-nome1 = input('digite um nome aqui: ')
-nome2 = input('digite outro nome aqui: ')
+print(p1[1:]+p2[1:])
+'''
+'''
+word = input("digite uma palavra: ")
+print(word[-2:]*3)
+'''
+'''
+nome1 = 'Maria'
+ano = 2000
+print(f'{nome1} e {'joão'} nasceram em {ano:int}')
+'''
+'''
+a = int(input("digite um número: "))
+b = int(input("digite um número: "))
 
-nomes = [nome1, nome2]
+if a>b:
+    print(a)
+else:
+    a = b
+    print(a)
+'''
 
-print(sorted(nomes))
-"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
