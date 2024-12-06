@@ -357,3 +357,123 @@ else:
     a = b
     print(a)
 '''
+'''
+def conc_nomes(n1, n2):
+    nomes = [n1, n2]
+    nomes.sort()
+    return ' '.join(nomes)
+
+n1 = input("digite um nome: ")
+n2 = input("digite um nome: ")
+
+
+print(conc_nomes(n1, n2))
+'''
+'''
+casa = float(input("qual é o valor da casa? "))
+salario = float(input("digite seu salário: "))
+anos = float(input("anos a pagar? ")) 
+
+meses = anos * 12
+prest = casa / meses
+
+if prest > salario * 0.3:
+    print("por enquanto num dá")
+else:
+    print("muito bem tá de casa nova")
+'''
+'''
+energia = int(input("digite o consumo de kWh: "))
+tipo = input("tipo de instalação, R para residências, I para indústrias e C para comércios: ")
+
+if tipo == 'r' or tipo == 'R':
+    if energia <= 500:
+        pagar = energia * 0.4
+        print(f"pague {pagar}")
+    else:
+        pagar = energia * 0.65
+        print(f"pague {pagar}")
+
+if tipo == 'c' or tipo == 'C':
+    if energia <= 1000:
+        pagar = energia * 0.55
+        print(f"pague {pagar}")
+    else:
+        pagar = energia * 0.6
+        print(f"pague {pagar}")
+
+if tipo == 'i' or tipo == 'I':
+    if energia <= 5000:
+        pagar = energia * 0.55
+        print(f"pague {pagar}")
+    else:
+        pagar = energia * 0.6
+        print(f"pague {pagar}")
+'''
+'''
+t1 = float(input("digite o primeiro termo: "))
+r = float(input("digite a razão: "))
+
+for i in range (1, 5):
+    print("{:.2f}".format(t1))
+    t1 = t1*r
+'''
+'''
+str1 = input("digite algo mínimo 15 caracteres: ")
+str2 = input("digite algo mínimo 15 caracteres: ")
+
+if len(str1) >= 15 and len(str1) >= 15:
+    print(str1[5:]+str2[:-10])
+else:
+    print("mais de 15...")
+'''
+'''
+s = input("string: ")
+x = input("caractere: ")
+i = int(input("inteiro entre 0 e o comprimento da string: "))
+
+if i <= len(s) and i > 0:
+    i = s[i-1:i]
+    s = s.replace(i, x, 1)
+    print(s)
+'''
+'''
+str = "abcdef"
+
+print(str[3:] + str[:3:])
+'''
+
+from  datetime import datetime
+import datetime
+
+data = input("insira uma data maior no formato AAAA/MM/DD: ")
+data2 = input("insira uma data menor no formato AAAA/MM/DD: ")
+
+year, month, day = map(int, data.split('-'))
+year2, month2, day2 = map(int, data2.split('-'))
+
+d1 = datetime.date(year, month, day)
+d2 = datetime.date(year2, month2, day2)
+
+difference = d1 - d2
+
+print(difference.days)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
