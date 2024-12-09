@@ -442,7 +442,7 @@ str = "abcdef"
 
 print(str[3:] + str[:3:])
 '''
-
+'''
 from  datetime import datetime
 import datetime
 
@@ -458,6 +458,139 @@ d2 = datetime.date(year2, month2, day2)
 difference = d1 - d2
 
 print(difference.days)
+'''
+'''
+cpf = input('escreva um cpf: ')
+
+multa = int(cpf[0:1])*10
+multb = int(cpf[1:2])*9
+multc = int(cpf[2:3])*8
+multd = int(cpf[3:4])*7
+multe = int(cpf[4:5])*6
+multf = int(cpf[5:6])*5
+multg = int(cpf[6:7])*4
+multh = int(cpf[7:8])*3
+multi = int(cpf[8:9])*2
+soma1 = (multa+multb+multc+multd+multe+multf+multg+multh+multi)
+r1 = soma1%11
+
+
+if r1 == 0 or r1 == 1:
+        d1 = 0
+        
+else:
+        d1 = 11-r1
+
+multb2 = int(cpf[1:2])*10
+multc2 = int(cpf[2:3])*9
+multd2 = int(cpf[3:4])*8
+multe2 = int(cpf[4:5])*7
+multf2 = int(cpf[5:6])*6
+multg2 = int(cpf[6:7])*5
+multh2 = int(cpf[7:8])*4
+multi2 = int(cpf[8:9])*3
+multj2 = d1*2
+soma2 = (multb2+multc2+multd2+multe2+multf2+multg2+multh2+multi2+multj2)
+r2 = soma2%11
+
+if r2 == 0 or r2 == 1:
+        d2 = 0
+        
+else:
+        d2 = 11-r2
+
+if d1 == int(cpf[9:10]) and d2 == int(cpf[10:11]):
+    regiao = cpf[8:9]
+
+    match regiao:
+        case '1':
+            regiao = 'DF, GO, MS, MT ou TO'
+        case '2':
+            regiao = 'AC, AM, AP, PA, RO ou RR'
+        case '3':
+            regiao = 'CE, MA ou PI'
+        case '4':
+            regiao = 'AL, PB, PE ou RN'
+        case '5':
+            regiao = 'BA ou SE'
+        case '6':
+            regiao = 'MG'
+        case '7':
+            regiao = 'ES ou RJ'
+        case '8':
+            regiao = 'SP'
+        case '9':
+            regiao = 'PR ou SC'
+        case '0':
+            regiao = 'RS'
+        case _:
+            regiao = 'regiao invalido'
+
+    print(f"cpf válido, a região emitida é {regiao}")
+else:
+    print(False)
+'''
+'''
+x = 50
+while x <= 100:
+    print(x)
+    x = x + 1
+'''
+'''
+x = 10
+while x >= 0:
+    print(x)
+    x = x - 1
+print('fogo')
+'''
+'''
+nt = int(input("digite um numero: "))
+x = 2
+
+while x <= nt:
+    print(x)
+    x = x + 2
+'''
+'''
+nt = int(input("digite um numero: "))
+x = 1
+
+while x <= nt:
+    print(x)
+    x = x + 2
+'''
+'''
+nt = int(input("digite um numero: "))
+pt = int(input("primeiro termo: "))
+
+soma = 0
+
+for i in range(pt, nt + 1):
+    if i % 2 == 0:
+        soma += i
+
+print(soma)
+'''
+notas = [8, 9, 7, 8.9, 6.5, 10, 10]
+
+soma = 0
+
+for i in range(len(notas)):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

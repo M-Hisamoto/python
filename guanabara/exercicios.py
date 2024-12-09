@@ -64,7 +64,7 @@ phrase = phrase.lower()
 phrase = " ".join(phrase.split())
 print(phrase.replace(" ", "")[::-1])
 '''
-
+'''
 for i in range (1, 8):
     an = int(input('digite seu ano de nascimento: '))
     id = 2024 - an
@@ -72,6 +72,22 @@ for i in range (1, 8):
         print("maior de idade")
     else:
         print("menor de idade")
+'''
+'''
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim')
+
+print(lanche[1])
+'''
+
+numeros =  (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+
+n = int(input('digite um numero de 0 a 20: '))
+
+if n > 20 or n < 0:
+    while n > 20 or n < 0:
+        n = int(input('tente novamente, digite um numero de 0 a 20: '))
+
+print(n)
 
 
 
@@ -80,17 +96,6 @@ for i in range (1, 8):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
