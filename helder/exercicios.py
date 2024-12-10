@@ -571,38 +571,50 @@ for i in range(pt, nt + 1):
 
 print(soma)
 '''
+'''
 notas = [8, 9, 7, 8.9, 6.5, 10, 10]
 
+soma = sum(notas)
+
+media = soma / len(notas)
+
+print(f'{media:.1f}')
+'''
+'''
+n = int(input("digite um número prara saber a tabuada: "))
+nt = int(input("digite o número de termos que quer mostrar: "))
+t = 1
+
+for i in range (1, nt + 1):
+     mult = n * t
+     print(mult)
+     t = t + 1
+'''
+'''
+n1 = int(input("digite um número aqui: "))
+n2 = int(input("digite outro número aqui: "))
+soma = 0 
+for i in range(1, n2 + 1):
+    soma += n1
+
+print(soma)
+'''
+
+dp = float(input("digite o depósito inicial: "))
+tj = float(input("taxa de juros: "))
+porcentagem = tj / 100
+juros = dp * porcentagem
+parcela = dp + juros
 soma = 0
+c = 1
 
-for i in range(len(notas)):
+for i in range(1, 25):
+     print(f'a parcela {c} é: {parcela:.2f}')
+     parcela = parcela + juros
+     soma += parcela
+     c += 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f'total ganho com juros é R${soma - (dp * 24):.2f}')
 
 
 
