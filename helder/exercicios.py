@@ -599,12 +599,14 @@ for i in range(1, n2 + 1):
 
 print(soma)
 '''
-
+'''
 dp = float(input("digite o depósito inicial: "))
 tj = float(input("taxa de juros: "))
+dpm = float(input("digite o depósito mensal: "))
+
 porcentagem = tj / 100
-juros = dp * porcentagem
-parcela = dp + juros
+juros = (dp + dpm) * porcentagem
+parcela = dp + juros + dpm
 soma = 0
 c = 1
 
@@ -615,6 +617,115 @@ for i in range(1, 25):
      c += 1
 
 print(f'total ganho com juros é R${soma - (dp * 24):.2f}')
+'''
+'''
+div = float(input("digite o valor inicial da dívida: "))
+jm = float(input("digite o valor do juros mensal: "))
+pago = float(input("digite o valor pago mensal: "))
+juros = jm / 100
+cont = 0
+
+while div > 0:
+    div = (div + juros) - pago
+    cont += 1
+
+print(f'serão necessários {cont} mes(es) para pagar a dívida.')
+print(div)
+'''
+'''
+c = 20
+
+while True:
+    print(c)
+    c -= 1
+    if c < 0:
+        break
+'''
+'''
+while True:
+    v = int(input("digite um número para continuar ou 0 para parar: "))
+    if v == 0:
+        break
+'''
+
+# A5_1S Escreva um programa que leia números inteiros do teclado. O programa deve ler os números até que o usuário digite 0 (zero). No final da execução, exiba a quantidade de números digitados, assim como a soma e a média aritmética.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
