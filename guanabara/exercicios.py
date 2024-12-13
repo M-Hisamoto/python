@@ -78,7 +78,7 @@ lanche = ('hamburguer', 'suco', 'pizza', 'pudim')
 
 print(lanche[1])
 '''
-
+'''
 numeros =  (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
 
 n = int(input('digite um numero de 0 a 20: '))
@@ -88,6 +88,25 @@ if n > 20 or n < 0:
         n = int(input('tente novamente, digite um numero de 0 a 20: '))
 
 print(n)
+'''
+
+Pais_A = 80000   # taxa de 3%
+Pais_B = 200000  # taxa de 1.5%
+Taxa_Pais_A = Pais_A * 0.03
+Taxa_Pais_B = Pais_B * 0.015
+c = 0
+
+while Pais_B > Pais_A:
+    Pais_A += Taxa_Pais_A
+    Pais_B += Taxa_Pais_B
+    c += 1
+        
+print(f'anos {c}')
+      
+
+
+
+
 
 
 

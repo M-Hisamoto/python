@@ -647,84 +647,108 @@ while True:
     if v == 0:
         break
 '''
-
-# A5_1S Escreva um programa que leia números inteiros do teclado. O programa deve ler os números até que o usuário digite 0 (zero). No final da execução, exiba a quantidade de números digitados, assim como a soma e a média aritmética.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''
+n = []
+c = 0
+while True:
+    v = int(input("digite um número para continuar ou 0 para parar: "))
+    if v == 0:
+        break
+    n.append(v)
+    c += 1
+
+print(f'quantidade de números digitados: {c}, soma: {sum(n)}, média aritmética: {sum(n)/len(n):.2f}, lista: {n}')
+'''
+'''
+print('
+    Código  Preço
+       1     0,50
+       2     1,00
+       3     4,00
+       5     7,00
+       9     8,00
+')
+
+total = 0
+
+while True:
+    cod = int(input("digite o código do produto ou zero para finalizar: "))
+    if cod == 0:
+        break
+    match cod:
+        case 1:
+            fruta = 0.5
+        case 2:
+            fruta = 1
+        case 3:
+            fruta = 4
+        case 5:
+            fruta = 7
+        case 9:
+            fruta = 8
+        case _:
+            print('Código inválido')
+            break
+    quant = int(input("digite a quantidade do produto: "))
+    preco = fruta  * quant
+    total += preco
+
+if total != 0:
+    print(f'o total é de R${total}')
+'''
+'''
+c = 1
+while c <= 30:
+    print("* "*c)
+    c += 1
+'''  
+'''
+populacao_a = 80000
+taxa_a = 0.03         
+populacao_b = 200000
+taxa_b = 0.015
+anos = 0
+
+while populacao_a < populacao_b:
+        populacao_a += populacao_a * taxa_a
+        populacao_b += populacao_b * taxa_b
+        anos += 1
+
+print(f'anos {anos}')
+'''
+
+# Função para calcular a soma dos n primeiros termos da sequência de Fibonacci
+def soma_fibonacci(n):
+    # Se n for 0, a soma é 0
+    if n == 0:
+        return 0
+    # Se n for 1, a soma é 1 (somente o primeiro termo)
+    elif n == 1:
+        return 1
+
+    # Inicializando os dois primeiros termos da sequência de Fibonacci
+    a, b = 0, 1
+    soma = a + b  # A soma inicial é 0 + 1 = 1
+
+    print(b)   
+    print(a)   
+    
+    # Calculando os termos subsequentes e somando
+    for _ in range(2, n):  # Começando do terceiro termo até o n-ésimo
+        c = a + b
+        soma += c
+        a = b
+        b = c
+        print(c)
+    
+    return soma
+
+# Leitura do número n
+n = int(input("Digite o número de termos da sequência de Fibonacci: "))
+
+# Calculando e exibindo a soma dos n primeiros termos
+resultado = soma_fibonacci(n)
+print(f"A soma dos {n} primeiros termos da sequência de Fibonacci é: {resultado}")
 
 
 
