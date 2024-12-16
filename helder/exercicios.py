@@ -716,7 +716,7 @@ while populacao_a < populacao_b:
 
 print(f'anos {anos}')
 '''
-
+'''
 # Função para calcular a soma dos n primeiros termos da sequência de Fibonacci
 def soma_fibonacci(n):
     # Se n for 0, a soma é 0
@@ -749,6 +749,48 @@ n = int(input("Digite o número de termos da sequência de Fibonacci: "))
 # Calculando e exibindo a soma dos n primeiros termos
 resultado = soma_fibonacci(n)
 print(f"A soma dos {n} primeiros termos da sequência de Fibonacci é: {resultado}")
+'''
+'''
+num = int(input("digite para multiplicação: "))
+vezes = int(input("digite para multiplicação: "))
+
+multiplicacao = 0
+
+for i in range (1, vezes +1 ):
+    multiplicacao =  multiplicacao + num
+
+print(multiplicacao)
+'''
+'''
+num = int(input("digite para divisão: "))
+divisor = int(input("digite para divisão: "))
+divisao = 0
+
+while num > 0:
+    num = num - divisor
+    divisao += 1
+    if num < 0:
+        divisao -= 1
+        divisao += 0.5
+
+print(float(divisao))
+'''
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
