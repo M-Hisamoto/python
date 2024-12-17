@@ -89,20 +89,45 @@ if n > 20 or n < 0:
 
 print(n)
 '''
+'''
+def linha():
+     print(30*"-")
 
-Pais_A = 80000   # taxa de 3%
-Pais_B = 200000  # taxa de 1.5%
-Taxa_Pais_A = Pais_A * 0.03
-Taxa_Pais_B = Pais_B * 0.015
-c = 0
+linha()
+'''
+'''
+def placa(frase):
+    print(30*'-')
+    print(frase)
+    print(30*'-')
 
-while Pais_B > Pais_A:
-    Pais_A += Taxa_Pais_A
-    Pais_B += Taxa_Pais_B
-    c += 1
-        
-print(f'anos {c}')
-      
+fraseA = 'matheus hisamoto'
+fraseB = 'fui na praia ontem'
+fraseC = 'o mar está bom'
+
+placa(fraseA)
+placa(fraseB)
+placa(fraseC)
+'''
+'''
+def soma(a, b):
+    s = int(a) + int(b)
+    return s
+
+while True:
+    a = (input('digite um número ou digite sair: '))
+    if a == 'sair':
+        break
+    b = (input('digite um número: '))
+    print(soma(a, b))
+'''
+
+
+
+
+
+
+
 
 
 
@@ -116,5 +141,11 @@ print(f'anos {c}')
 
 
   
+
+
+
+
+
+
 
 

@@ -775,8 +775,55 @@ while num > 0:
 
 print(float(divisao))
 '''
+'''
+while True:
+    op = input("digite a operação ou 0 pra sair: ")
+    if op == '0':
+        break
+    match op:
+        case "+":
+            print("ok")
+        case "-":
+            print("ok")
+        case "/":
+            print("ok")
+        case "*":
+            print("ok")
+        case _:
+            print("tente novamente")
+'''
+'''
+num = int(input("digite um número: "))
 
- 
+def is_prime(num):
+    if num < 2:
+        print("não é primo")
+        return False
+    elif num == 2:
+        print("é primo")
+        return True
+    elif num % 2 == 0:
+        return False
+    
+    for i in range(3, int(num ** 0.5) + 1, 2):
+            if num % i == 0:
+                return False
+    return True
+
+
+if is_prime(num):
+     print(f"O número {num} é primo.")
+else:
+    print(f"O número {num} não é primo.")
+'''
+
+
+
+def linha():
+     print(30*"-")
+
+linha()
+
 
 
 
