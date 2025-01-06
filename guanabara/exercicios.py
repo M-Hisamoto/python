@@ -121,31 +121,3 @@ while True:
     b = (input('digite um número: '))
     print(soma(a, b))
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
