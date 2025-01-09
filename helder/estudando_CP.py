@@ -36,7 +36,14 @@ for c in range(10, 0, -1):
     time.sleep(1)
 print('fim')
 '''
-
+'''
 for c in range(2, 50, 2):
     print(c)
 print('fim')
+'''
+
+for i in range(10, 0, -2):
+    print (i)
+
+
+

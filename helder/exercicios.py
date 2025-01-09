@@ -816,12 +816,51 @@ if is_prime(num):
 else:
     print(f"O número {num} não é primo.")
 '''
-
-
+'''
 def linha():
      print(30*"-")
 
 linha()
+'''
+'''
+def calcular_media(notas):
+    if len(notas) == 0:
+        print('sua lista está vazia')
+    soma = sum(notas)
+    media = soma / len(notas)
+    return media
+
+notas = [2.1, 8, 9.5, 7.5, 10, 4, 7.3, 8.2]
+media = calcular_media(notas)
+print(f"a média das notas é {media:.2f}")
+'''
+'''
+n = int(input("digite um número: "))
+c = int(input("digite um inicio: "))
+fim = int(input("digite um término para a tabuada: "))
+n1 = n
+
+while  c <= fim:
+    print(f'{c} X {n1} = {c*n1}')
+    c = c + 1
+'''
+'''
+def palindromo(num):
+    if num == num[::-1]:
+        return True
+    else:
+        return False
+
+num = input('digite um numero: ')
+
+if palindromo(num) is True:
+    print('é um palindromo')
+else:
+    print('não é um palindromo')
+'''
+
+
+
 
 
 

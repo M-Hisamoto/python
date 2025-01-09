@@ -121,3 +121,98 @@ while True:
     b = (input('digite um número: '))
     print(soma(a, b))
 '''
+'''
+def area(b, h):
+    arear = b * h 
+    return arear
+
+def mensagem( b, h, area): 
+    print(f'A área de um terreno {b}X{h} é de {area}m².')
+
+
+b = float(input("digite o tamanho em metros da base do seu terreno: "))
+h = float(input("digite o tamanho em metros da altura do seu terreno: "))
+
+mensagem(b, h, area(b, h))
+'''
+'''
+def escreva(frase, tam):
+    print((tam + 2)*'~')
+    print(f' {frase} ')
+    print((tam + 2)*'~')
+    
+
+frase = input('digite uma frase: ')
+tam = len(frase)
+
+escreva(frase, tam)
+'''
+'''
+inicio = 1
+fim = 11
+passo = 1
+def contagem(inicio, fim, passo):
+    for i in range(inicio, fim, passo):
+        print(i)
+
+contagem(inicio, fim, passo)
+
+inicio1 = 10
+fim1 = -1
+passo1 = -2
+def contagem1(inicio1, fim1, passo1):
+    for i in range(inicio1, fim1, passo1):
+        print(i)
+
+contagem1(inicio1, fim1, passo1)
+
+
+inicio2 = int(input("digite um inicio inteiro: "))
+fim2 = int(input("digite um fim inteiro: "))
+passo2 = int(input("digite um passo inteiro: "))
+
+if fim2 > 0:
+    fim2 = fim2 + 1
+else:
+    fim2 = fim2 - 1
+
+
+if inicio2> fim2:
+    passo2 = passo2*(-1)
+
+if passo2 == 0:
+    passo2 = 1
+    
+def contagem2(inicio2, fim2, passo2):
+    for i in range(inicio2, fim2, passo2):
+        print(i)
+
+contagem2(inicio2, fim2, passo2)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
