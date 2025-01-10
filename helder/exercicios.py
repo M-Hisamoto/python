@@ -858,20 +858,33 @@ if palindromo(num) is True:
 else:
     print('não é um palindromo')
 '''
+'''
+a = 80000
+b = 200000
+taxa_A = 0.03
+taxa_B = 0.015
+anos = 0
 
+while a < b:
+    a *= (1 + taxa_A)
+    b *= (1 + taxa_B)
+    c = c + 1
 
+print (anos)
+print (a)
+print (b)
+'''
 
+def fibonacci(n):
+    sequence = [0, 1]
+    while len(sequence) < n:
+        next_number = sequence[-1] + sequence[-2]
+        sequence.append(next_number)
+    return sequence
 
-
-
-
-
-
-
-
-
-
-
+n = 10
+result = fibonacci(n)
+print(result)
 
 
 
