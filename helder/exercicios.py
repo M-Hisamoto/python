@@ -874,7 +874,7 @@ print (anos)
 print (a)
 print (b)
 '''
-
+'''
 def fibonacci(n):
     sequence = [0, 1]
     while len(sequence) < n:
@@ -885,8 +885,45 @@ def fibonacci(n):
 n = 10
 result = fibonacci(n)
 print(result)
+'''
+'''
+nomes = []
 
+while True:
+    nome = input('digite um nome: ')
+    nomes.append(nome)
+    if nome == '0':
+        break
+ 
+print(nomes)
+'''
+'''
+import random
 
+jogadas = int(input('digite o número de jogadas que deseja fazer: '))
+c = 0
+historico = []
+
+while c < jogadas: 
+    moeda = random.randint(1, 2)
+    if moeda == 1:
+        historico.append('cara')
+    elif moeda == 2:
+        historico.append('coroa')
+    c += 1
+
+print(historico)
+'''
+
+from time import sleep
+
+print('Loading', end='\r')
+sleep(1)
+print('Loading.', end='\r' )
+sleep(1)
+print('Loading..', end='\r')
+sleep(1)
+print('Loading...')
 
 
 
