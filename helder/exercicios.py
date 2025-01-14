@@ -914,7 +914,7 @@ while c < jogadas:
 
 print(historico)
 '''
-
+'''
 from time import sleep
 
 print('Loading', end='\r')
@@ -924,6 +924,45 @@ sleep(1)
 print('Loading..', end='\r')
 sleep(1)
 print('Loading...')
+'''
+'''
+def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n - 1)
+
+n = int(input('digite um numero inteiro: '))
+print(fatorial(n))
+'''
+'''
+senha = input('digite uma senha: ')
+
+while True:
+    conf_senha = input('confirme a senha: ')
+    print('a senha não é compativel')
+    if conf_senha == senha:
+        print('as senhas batem')
+        break
+'''
+'''
+import random
+
+soma = 0
+
+while True:
+    n = random.randint(1, 10)
+    soma += n
+    if n == 5:
+        break
+
+print(soma)
+'''
+
+
+
+
+
 
 
 
