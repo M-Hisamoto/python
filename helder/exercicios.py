@@ -958,6 +958,201 @@ while True:
 
 print(soma)
 '''
+'''
+nomes = ['matheus', 'gabriel', 'duda', 'roberto', 'duda']
+idades = ['23', '14', '110', '30']
+palavra = 'chocolate'
+
+nomes.extend(idades)
+nomes.extend(palavra)
+print(nomes)
+print(nomes.index('duda'))
+'''
+'''
+n = int(input("Digite um número: "))
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()  
+'''
+'''
+notas = []
+
+while True:
+    n = float(input('Digite um número(float ou digite 0 para sair): '))
+    if n == 0:
+        break
+    notas.append(n)
+
+soma = sum(notas)
+media = soma / len(notas)
+
+print(media)
+print(notas)
+print(len(notas))
+print(soma)
+'''
+'''
+l1 = []
+l2 = []
+
+print('-'*15, 'lista 1', '-'*15)
+for i in range(0, 5):
+    n = int(input('Digite um numero inteiro: '))
+    l1.append(n)
+
+print('-'*15, 'lista 2', '-'*15)
+for i in range(0, 5):
+    n = int(input('Digite um numero inteiro: '))
+    l2.append(n)
+
+
+iguais = [x for x in l1 if x in l2]
+        
+if iguais:
+    print (f'os elementos iguais são {iguais}')
+else:
+    print("Não há elementos em comum entre as listas.")
+'''
+'''
+linha = int(input('digite o tamanho da largura: '))
+colunas = int(input('digite o tamanho da altura: '))
+c = 1
+
+while c <= colunas:
+    print('#' * linha)
+    c += 1
+'''
+'''
+for hora in range(24):
+    for minuto in range(60):        
+        print(f"{hora:02}:{minuto:02}")
+'''
+'''
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+del list[2]
+list.remove(5)
+list.append(11)
+list.append(12)
+list.insert(0, 0)
+
+print(f'o tamanho da lista é 
+{len(list)}')
+print(list)
+'''
+'''
+def vazio(list, x):
+    if len(list) == 0:
+            print('insira os elementos, primeiro')
+    else:
+        print(x)
+
+print('1. inserir valores')
+print('2. Calcular média')
+print('3. Calcular soma')
+print('4. Calcular o maior')
+print('5. Calcular o menor')
+
+list = []
+
+while True:
+    opc = str(input('escolha sua opção ou digite s para sair: '))
+    match opc:
+        case '1':
+            val = int(input('digite o número de valores na lista: '))
+            for i in range(val):
+                n = int(input('digite um numero: '))
+                list.append(n)
+        case '2':
+            vazio(list, "Calculando a média...")
+            if len(list) > 0:
+                soma = sum(list)
+                media = soma / len(list)
+                print(f'Média: {media:.2f}')
+        case'3':
+            vazio(list, "Calculando a soma...")
+            if len(list) > 0:
+                soma = sum(list)
+                print(f'Soma: {soma}')
+        case'4':
+            vazio(list, "Calculando o maior...")
+            if len(list) > 0:
+                print(max(list))
+        case'5':
+            vazio(list, "Calculando o menor...")
+            if len(list) > 0:
+                print(min(list))
+        case's':
+            break   
+        case _:
+            print('opção inválida')
+'''
+'''
+print('1. incluir contato')
+print('2. excluir contato')
+print('3. alterar contato')
+print('4. pesquisa de contato')
+print('5. listar')
+print('6. ordenar')
+
+contato = int(input('digite o contato: '))
+
+
+
+print(f'o contato solicitado é {nomes[(contato-1)]} e {num[(contato-1)]}')
+'''
+
+x = ['matheus', 'carol', 'thiago']
+y = [956313648, 946532187, 9643125876]
+
+# ordene os índices em vez dos elementos em si
+indices = list(range(len(x)))
+indices.sort(key=lambda i: x[i]) # ordene os índices com relação ao seu respectivo valor em x
+
+# crie as listas baseado na ordem dos índices
+new_x = [x[i] for i in indices]
+new_y = [y[i] for i in indices]
+
+x = new_x
+y = new_y
+
+print(x) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(y) # ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
