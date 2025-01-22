@@ -1088,38 +1088,50 @@ while True:
             break   
         case _:
             print('opção inválida')
-'''
-'''
-print('1. incluir contato')
-print('2. excluir contato')
-print('3. alterar contato')
-print('4. pesquisa de contato')
-print('5. listar')
-print('6. ordenar')
-
-contato = int(input('digite o contato: '))
 
 
 
-print(f'o contato solicitado é {nomes[(contato-1)]} e {num[(contato-1)]}')
-'''
 
-x = ['matheus', 'carol', 'thiago']
-y = [956313648, 946532187, 9643125876]
 
-# ordene os índices em vez dos elementos em si
+
+
+
+print(f'o contato solicitado é {x[(contato-1)]} e {y[(contato-1)]}')
+
 indices = list(range(len(x)))
-indices.sort(key=lambda i: x[i]) # ordene os índices com relação ao seu respectivo valor em x
+indices.sort(key=lambda i: x[i])
 
-# crie as listas baseado na ordem dos índices
 new_x = [x[i] for i in indices]
 new_y = [y[i] for i in indices]
 
 x = new_x
 y = new_y
 
-print(x) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(y) # ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+print(x)
+print(y)
+'''
+
+print('1. incluir contato')
+print('2. excluir contato')
+print('3. alterar contato')
+print('4. pesquisa de contato')
+print('5. listar')
+print('6. ordenar')
+opc = int(input('digite o codigo: '))
+
+x = ['matheus', 'carol', 'thiago']
+y = [956313648, 946532187, 9643125876]
+
+match opc:
+    case 1:
+        print('')
+
+
+
+
+
+
+
 
 
 
