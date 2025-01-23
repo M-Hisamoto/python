@@ -1124,10 +1124,19 @@ y = [956313648, 946532187, 9643125876]
 
 match opc:
     case 1:
-        print('')
+        nx, ny = input('digite o nome: '), int(input('digite o numero: '))
+        x.append(nx)
+        y.append(ny)
+    case 2:
+        i = int(input('digite a posição do contato que deseja excluir: '))
+        del x[(i-1)]
+        del y[(i-1)]
+    case _:
+        print('numero inválido')
 
 
-
+print(x)
+print(y)
 
 
 
