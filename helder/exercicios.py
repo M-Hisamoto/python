@@ -1088,55 +1088,64 @@ while True:
             break   
         case _:
             print('opção inválida')
-
-
-
-
-
-
-
-
-print(f'o contato solicitado é {x[(contato-1)]} e {y[(contato-1)]}')
-
-indices = list(range(len(x)))
-indices.sort(key=lambda i: x[i])
-
-new_x = [x[i] for i in indices]
-new_y = [y[i] for i in indices]
-
-x = new_x
-y = new_y
-
-print(x)
-print(y)
 '''
-
-print('1. incluir contato')
-print('2. excluir contato')
-print('3. alterar contato')
-print('4. pesquisa de contato')
-print('5. listar')
-print('6. ordenar')
-opc = int(input('digite o codigo: '))
 
 x = ['matheus', 'carol', 'thiago']
 y = [956313648, 946532187, 9643125876]
 
-match opc:
-    case 1:
-        nx, ny = input('digite o nome: '), int(input('digite o numero: '))
-        x.append(nx)
-        y.append(ny)
-    case 2:
-        i = int(input('digite a posição do contato que deseja excluir: '))
-        del x[(i-1)]
-        del y[(i-1)]
-    case _:
-        print('numero inválido')
+while True:
+    print('1. incluir contato')
+    print('2. excluir contato')
+    print('3. alterar contato')
+    print('4. pesquisa de contato')
+    print('5. listar')
+    print('6. ordenar')
+    print('7. para sair')
+    opc = int(input('digite o codigo: '))
+
+    match opc:
+        case 1:
+            nx, ny = input('digite o nome: '), int(input('digite o numero: '))
+            x.append(nx)
+            y.append(ny)
+        case 2:
+            i = int(input('digite a posição do contato que deseja excluir: '))
+            del x[(i-1)]
+            del y[(i-1)]
+        case 3:
+            i = int(input('digite a posição do contato que deseja alterar: '))
+            nx, ny = input('digite o nome para alterar: '), int(input('digite o numero para alterar: '))
+            x[(i-1)] = nx
+            y[(i-1)] = ny
+        case 4:
+            i = int(input('1 para pesquisar por posição ou 2 para pesquisar por nome: '))
+            if i == 1:
+                opc = int(input('digite aqui a posição: '))
+                print(x[(opc-1)])
+                print(y[(opc-1)])
+            elif i == 2:
+                opc = (input('digite aqui o nome em minúsculo: '))
+                ix = x.index(opc)+1
+                if opc in x:
+                    print(opc)
+                    print(y[ix-1])
+        case 5:
+            print(x)
+            print(y)
+        case 6:
+            indices = list(range(len(x)))
+            indices.sort(key=lambda i: x[i])
+            new_x = [x[i] for i in indices]
+            new_y = [y[i] for i in indices]
+            x = new_x
+            y = new_y
+            print('ordenada com sucesso')
+        case 7:
+            break
+        case _:
+            print('opcao inválida')
 
 
-print(x)
-print(y)
 
 
 
